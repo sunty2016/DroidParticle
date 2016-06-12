@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:text="INFO"/>
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_edit"
+        android:scaleType="center"/>
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_toLeftOf="@id/iv_edit"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_media_play"
+        android:scaleType="center"/>
+
+    <com.sunty.droidparticle.ParticleSystemView
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_info"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_info">
+
+    </FrameLayout>
+
+</RelativeLayout>
